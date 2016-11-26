@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:id="@+id/listImageView"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/coupon_id"
+        android:textSize="10dp"
+        android:text="CouponID"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="2017-09-26"
+        android:id="@+id/due_date"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="可使用至"
+        android:layout_alignBottom="@+id/listImageView"
+        android:layout_toEndOf="@+id/listImageView"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="使用"
+        android:id="@+id/use_btn"
+        android:background="@drawable/button_rectangle_shape"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15dp"
+        android:layout_above="@+id/due_date"
+        android:layout_toEndOf="@+id/due_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CouponName"
+        android:id="@+id/coupon_name"
+        android:layout_alignTop="@+id/listImageView"
+        android:layout_toEndOf="@+id/listImageView" />
+
+</RelativeLayout>

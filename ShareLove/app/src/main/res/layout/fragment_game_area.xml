@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.jiarou.sharelove.Game_areaFragment"
+             android:id="@+id/game_area">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="503dp"
+        android:layout_gravity="center_horizontal|top"
+        android:weightSum="1"
+        >
+
+        <ImageView
+            android:layout_width="163dp"
+            android:layout_height="160dp"
+            android:id="@+id/imageView8"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/game_area"/>
+
+        <TextView
+            android:layout_width="124dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="  選擇縣市"
+            android:id="@+id/textView18"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/spinner5"
+            android:background="@drawable/round01"
+            android:layout_weight="0.44"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#a2f4dc"/>
+
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:id="@+id/city"
+            android:layout_below="@+id/textView18"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/round01"/>
+
+        <TextView
+            android:layout_width="124dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="  選擇地區"
+            android:id="@+id/textView19"
+            android:layout_below="@+id/spinner5"
+            android:layout_alignEnd="@+id/spinner5"
+            android:background="@drawable/round01"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#a2f4dc"/>
+
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:id="@+id/area"
+            android:layout_below="@+id/textView19"
+            android:layout_alignEnd="@+id/spinner5"
+            android:background="@drawable/round01"
+            android:layout_marginLeft="50dp"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/check"
+            android:clickable="false"
+            android:choiceMode="singleChoice"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:touchscreenBlocksFocus="false"
+            android:contextClickable="false"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="47dp"
+            android:text="開始遊戲"
+            android:id="@+id/start"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round01"
+            android:backgroundTint="#cdc9c9"
+            android:layout_marginTop="3dp"/>
+    </LinearLayout>
+
+</FrameLayout>

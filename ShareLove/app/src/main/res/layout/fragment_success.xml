@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.jiarou.sharelove.GameFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/imageView7"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/hand_gesture"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="恭喜完成任務"
+            android:id="@+id/textView35"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="30dp"/>
+
+        <Button
+            android:layout_width="145dp"
+            android:layout_height="64dp"
+            android:id="@+id/general_btn"
+            android:textSize="30dp"
+            android:background="@drawable/round01"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#bad4f9"
+            android:layout_marginLeft="120dp"
+            android:text="查看任務"/>
+
+    </LinearLayout>
+
+</FrameLayout>

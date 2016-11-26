@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jiarou.sharelove.Test03Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="選擇縣市"
+        android:id="@+id/textView18"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/spinner5"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner5"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="141dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="選擇地區"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/spinner5"
+        android:layout_alignEnd="@+id/spinner5"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner6"
+        android:layout_below="@+id/textView19"
+        android:layout_alignEnd="@+id/spinner5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="選擇想要的種類"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/spinner6"
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner7"
+        android:layout_below="@+id/textView20"
+        android:layout_toStartOf="@+id/textView20"
+        android:layout_alignEnd="@+id/textView20"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="開始遊戲"
+        android:id="@+id/start"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

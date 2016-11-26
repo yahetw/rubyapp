@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="評論"
+        android:id="@+id/textView13"
+        android:textSize="36dp"
+        android:textColor="#212121"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:singleLine="false"
+            android:textColor="#212121"
+            android:inputType="textMultiLine"
+            android:hint="請輸入評論..."
+            android:textColorHint="#757575"
+            android:layout_weight="4" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="留言"
+            android:id="@+id/commentButton"
+            android:layout_weight="1"
+            android:onClick="onButtonClick" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentListView"
+        android:listSelector="#B3E5FC"
+        android:divider="#B3E5FC"
+        android:dividerHeight="3dp"
+        android:headerDividersEnabled="true"
+        android:radius = "15dp"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="20dp"/>
+</LinearLayout>

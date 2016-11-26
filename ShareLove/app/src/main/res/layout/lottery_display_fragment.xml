@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="\n目前搜集\n\n"
+                    android:id="@+id/textView29"
+                    android:textAlignment="center"
+                    android:background="#B3E5FC"
+                    android:autoText="false"
+                    android:textColor="#212121"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/current_num5"
+                    android:text="萬"
+                    android:textSize="24dp"
+                    android:layout_alignStart="@+id/textView29"
+                    android:layout_alignLeft="@+id/textView29"
+                    android:layout_below="@+id/textView29"
+                    android:layout_centerInParent="true"
+                    android:textAlignment="center"
+                    android:paddingTop="4dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_rectangle_shape"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/current_num4"
+                    android:text="千"
+                    android:layout_marginStart="29dp"
+                    android:textSize="24dp"
+                    android:layout_toEndOf="@+id/current_num5"
+                    android:layout_toRightOf="@+id/current_num5"
+                    android:layout_below="@+id/textView29"
+                    android:layout_centerInParent="true"
+                    android:textAlignment="center"
+                    android:paddingTop="4dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_rectangle_shape"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="百"
+                    android:id="@+id/current_num3"
+                    android:textSize="24dp"
+                    android:layout_toEndOf="@+id/current_num4"
+                    android:layout_marginStart="29dp"
+                    android:layout_below="@+id/textView29"
+                    android:layout_centerInParent="true"
+                    android:textAlignment="center"
+                    android:paddingTop="4dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_rectangle_shape"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="十"
+                    android:id="@+id/current_num2"
+                    android:layout_marginStart="29dp"
+                    android:textSize="24dp"
+                    android:textAlignment="center"
+                    android:singleLine="false"
+                    android:paddingTop="4dp"
+                    android:layout_alignBottom="@+id/current_num3"
+                    android:layout_toEndOf="@+id/current_num3"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_rectangle_shape"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="個"
+                    android:id="@+id/current_num1"
+                    android:layout_marginStart="29dp"
+                    android:textSize="24dp"
+                    android:autoText="false"
+                    android:layout_toEndOf="@+id/current_num2"
+                    android:layout_alignBottom="@+id/current_num2"
+                    android:paddingTop="4dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_rectangle_shape"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/gameRule_btn"
+                    android:layout_gravity="right"
+                    android:background="@mipmap/question"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/collect_period"
+                    android:layout_alignBottom="@+id/textView29"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#757575"
+                    android:layout_marginBottom="20dp"
+                    android:background="#FFFF"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F0F0F0"
+            android:id="@+id/view2"
+            android:layout_below="@+id/textView29"
+            android:layout_alignParentStart="true" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="蒐集獎號"
+                    android:textAlignment="center"
+                    android:background="#B3E5FC"
+                    android:id="@+id/textView36"
+                    android:textColor="#212121"
+                    android:textSize="14dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/past_owned_number" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/past_owned_number"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#fdc72b"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/textView36" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/past_period"
+                    android:background="#B3E5FC"
+                    android:textSize="14dp"
+                    android:textColor="#212121"
+                    android:textAlignment="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignBottom="@+id/past_owned_number" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F0F0F0"
+            android:id="@+id/view5"
+            android:layout_below="@+id/textView29"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ECF4FC">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="是否中獎"
+                    android:textAlignment="center"
+                    android:background="#00B3EA"
+                    android:id="@+id/textView30"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#FFFF"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/check_y_n" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/check_y_n"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:textSize="20dp"
+                    android:layout_toEndOf="@+id/textView30"
+                    android:textColor="#0288DE" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/past_period2"
+                    android:background="#00B3EA"
+                    android:textSize="14dp"
+                    android:textColor="#FFFF"
+                    android:textAlignment="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignBottom="@+id/check_y_n" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F0F0F0"
+            android:id="@+id/view3"
+            android:layout_below="@+id/textView29"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ECF4FC">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="開獎號碼"
+                    android:textAlignment="center"
+                    android:background="#00B3EA"
+                    android:id="@+id/textView31"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#FFFF"
+                    android:layout_below="@+id/winning_num"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/winning_num"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/textView31"
+                    android:textColor="#0288DE"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/win_period"
+                    android:background="#00B3EA"
+                    android:textSize="14dp"
+                    android:layout_alignBottom="@+id/winning_num"
+                    android:textColor="#FFFF"
+                    android:textAlignment="center" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F0F0F0"
+            android:id="@+id/view4"
+            android:layout_below="@+id/textView29"
+            android:layout_alignParentStart="true" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_weight="20">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="兌    獎"
+                android:id="@+id/check_btn"
+                android:textSize="25dp"
+                android:background="#34b581"
+                android:textColor="#ffff"
+                android:layout_gravity="bottom" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

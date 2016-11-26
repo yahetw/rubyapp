@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f9f5da"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView17"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/textView27"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search01"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="縣市"
+            android:id="@+id/textView27"
+            android:textSize="30dp"
+            android:layout_below="@+id/imageView17"
+            android:layout_alignStart="@+id/textView28"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+        <Spinner
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:id="@+id/spinner"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/round01"
+            android:layout_below="@+id/textView27"
+            android:layout_alignStart="@+id/spinner3"
+            android:layout_marginLeft="30dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="區域"
+            android:id="@+id/textView28"
+            android:layout_below="@+id/spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"/>
+        <Spinner
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:id="@+id/spinner3"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/round01"
+            android:layout_below="@+id/textView28"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜尋"
+            android:id="@+id/search"
+            android:layout_below="@+id/spinner3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/search"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/face"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/tx1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignEnd="@+id/spinner3"
+                android:layout_alignStart="@+id/spinner3"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="7dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

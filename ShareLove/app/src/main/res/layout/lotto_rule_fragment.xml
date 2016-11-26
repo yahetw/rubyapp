@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7a7a9b"
+    android:minHeight="250dp">
+
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/exit_btn"
+        android:layout_gravity="right"
+        android:src="@mipmap/close"
+        android:background="#00efeff0"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lotto_rule_title"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:id="@+id/textView23"
+        android:textColor="#ffff"
+        android:layout_alignBottom="@+id/exit_btn"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ffff"
+        android:layout_marginTop="7dp"
+        android:id="@+id/view2"
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lotto_rule_content"
+        android:layout_marginTop="23dp"
+        android:singleLine="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:minHeight="100dp"
+        android:phoneNumber="false"
+        android:lineSpacingExtra="8dp"
+        android:textColor="#ffffff"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

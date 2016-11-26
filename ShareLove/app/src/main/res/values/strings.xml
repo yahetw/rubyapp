@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ShareLove</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+    <string-array name="cities">
+        <item>台北</item>
+        <item>新北</item>
+        <item>基隆</item>
+        <item>台中</item>
+        <item>高雄</item>
+    </string-array>
+
+    <string-array name="vendor_types">
+        <item>饅頭</item>
+        <item>果汁</item>
+        <item>民生用品</item>
+        <item>甜湯</item>
+        <item>地瓜</item>
+    </string-array>
+
+    <string name="lotto_rule_title">遊戲規則</string>
+    <string name="lotto_rule_content">於焦點頁面分享店家至FB上，系統將隨機給予一個0-9的數字。每星期六 0:00 固定開出一個五位數號碼，而在開獎前的一週內您最多可以得到5個號碼。兌獎方式如同發票兌獎一樣，分為中末三碼、末四碼及全中，分別可以得到不同數量的愛心點數。</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="facebook_app_id">1266123886739578</string>
+    <string name="logout">logout</string>
+    <string name="登出">logout1</string>
+    <string name="logout01">登出</string>
+
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+</resources>
