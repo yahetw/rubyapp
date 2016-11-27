@@ -20,6 +20,8 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.Query;
+import com.github.ikidou.fragmentBackHandler.BackHandlerHelper;
+import com.github.ikidou.fragmentBackHandler.FragmentBackHandler;
 
 import java.util.Objects;
 
@@ -32,7 +34,7 @@ import java.util.Objects;
  * Use the {@link ChanglleFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ChanglleFragment extends Fragment {
+public class ChanglleFragment extends Fragment implements FragmentBackHandler {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -526,6 +528,13 @@ public class ChanglleFragment extends Fragment {
     public interface delete {
         // TODO: Update argument type and name
         void delete();
+    }
+
+
+    @Override
+    public boolean onBackPressed() {
+
+        return BackHandlerHelper.handleBackPress(this);
     }
 
 

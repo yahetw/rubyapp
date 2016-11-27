@@ -56,6 +56,8 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.Query;
+import com.github.ikidou.fragmentBackHandler.BackHandlerHelper;
+import com.github.ikidou.fragmentBackHandler.FragmentBackHandler;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -71,7 +73,7 @@ import java.util.Set;
  * Use the {@link Game_areaFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Game_areaFragment extends Fragment {
+public class Game_areaFragment extends Fragment  implements FragmentBackHandler {
 
     private String[] type = new String[] {"新北市", "台北市"
             ,"台中市","高雄市"};
@@ -777,6 +779,14 @@ city01.add(get_area);
         void Choose_area(String data);
 
 
+        void delete();
+    }
+
+    @Override
+    public boolean onBackPressed() {
+
+
+        return BackHandlerHelper.handleBackPress(this);
     }
 }
 

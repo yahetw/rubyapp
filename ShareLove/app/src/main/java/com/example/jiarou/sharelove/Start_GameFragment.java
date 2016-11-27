@@ -1,6 +1,8 @@
 package com.example.jiarou.sharelove;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
@@ -29,6 +31,8 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.Query;
+import com.github.ikidou.fragmentBackHandler.BackHandlerHelper;
+import com.github.ikidou.fragmentBackHandler.FragmentBackHandler;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -48,7 +52,7 @@ import java.util.Locale;
  * Use the {@link Start_GameFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Start_GameFragment extends Fragment implements LocationListener {
+public class Start_GameFragment extends Fragment implements LocationListener,FragmentBackHandler {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -540,5 +544,31 @@ return false;
     public interface Start_game {
         // TODO: Update argument type and name
         void  Start_game(String check);
+    }
+
+    @Override
+    public boolean onBackPressed() {
+
+        if (!BackHandlerHelper.handleBackPress(this)) {
+            AlertDialog.Builder bdr = new AlertDialog.Builder(getActivity());
+            bdr.setMessage("確定離開遊戲嘛？");
+            bdr.setTitle("提醒");
+            bdr.setPositiveButton("確認", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    getActivity().finish();
+                    final Intent intent = new Intent();
+                    intent.setClass(getActivity(), GameActivity.class);
+
+                    startActivity(intent);
+                }
+            });
+
+            bdr.setNegativeButton("繼續", null);
+            bdr.show();
+
+        }
+            return true;
+
     }
 }

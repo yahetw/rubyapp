@@ -20,6 +20,8 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.Query;
+import com.github.ikidou.fragmentBackHandler.BackHandlerHelper;
+import com.github.ikidou.fragmentBackHandler.FragmentBackHandler;
 
 import java.util.Objects;
 
@@ -235,14 +237,6 @@ public class GameActivity extends AppCompatActivity  implements GameFragment.Ope
 
             }
         });
-
-
-
-
-
-
-
-
     }
 
 
@@ -329,7 +323,7 @@ public class GameActivity extends AppCompatActivity  implements GameFragment.Ope
        final GameFragment  gameFragment =GameFragment.newInstance();
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.game_root, GameFragment.newInstance(), "game")
+                .replace(R.id.game_root, gameFragment, "game")
                 .addToBackStack(null)
                 .commit();
 
@@ -359,6 +353,17 @@ public class GameActivity extends AppCompatActivity  implements GameFragment.Ope
 
     }
 
+
+    @Override
+    public void onBackPressed() {
+        if (!BackHandlerHelper.handleBackPress(this)) {
+            super.onBackPressed();
+        }
+    }
+
+
+
+    /**
     @Override
     public  boolean onKeyDown(int keyCode, KeyEvent event){
         Log.d("test","event");
@@ -381,6 +386,8 @@ public class GameActivity extends AppCompatActivity  implements GameFragment.Ope
                  }
                  return super.onKeyDown(keyCode, event);
              }
+
+     **/
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
