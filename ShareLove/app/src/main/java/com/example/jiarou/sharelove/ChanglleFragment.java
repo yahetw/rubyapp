@@ -3,6 +3,7 @@ package com.example.jiarou.sharelove;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -533,8 +534,28 @@ public class ChanglleFragment extends Fragment implements FragmentBackHandler {
 
     @Override
     public boolean onBackPressed() {
+        if (!BackHandlerHelper.handleBackPress(this)) {
+            AlertDialog.Builder bdr = new AlertDialog.Builder(getActivity());
+            bdr.setMessage("確定離開遊戲嘛？");
+            bdr.setTitle("提醒");
+            bdr.setPositiveButton("確認", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    getActivity().finish();
+                    final Intent intent = new Intent();
+                    intent.setClass(getActivity(), GameActivity.class);
 
-        return BackHandlerHelper.handleBackPress(this);
+                    startActivity(intent);
+                }
+            });
+
+            bdr.setNegativeButton("繼續", null);
+            bdr.show();
+
+        }
+        return true;
+
+
     }
 
 

@@ -3,7 +3,8 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context="com.example.jiarou.sharelove.ChanglleFragment"
-             android:id="@+id/challenge_root">
+             android:id="@+id/challenge_root"
+             android:background="#f9f5da">
 
     <LinearLayout
         android:orientation="vertical"

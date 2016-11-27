@@ -94,7 +94,7 @@ public class SearchActivity extends AppCompatActivity {
         tx1 =(TextView) findViewById(R.id.tx1);
         tx1.setText("抱歉！此區尚無攤販資料喔！");
         face =(ImageView) findViewById(R.id.face);
-        face.setBackgroundResource(R.drawable.unhappy);
+        face.setBackgroundResource(R.drawable.close);
 
         //tx1.setVisibility(View.GONE);
       //  vendor_type=(Spinner) findViewById(R.id.spinner2);
@@ -144,7 +144,7 @@ public class SearchActivity extends AppCompatActivity {
 
             tx1.setText("抱歉！此區尚無攤販資料喔！");
             tx1.setVisibility(View.VISIBLE);
-            face.setBackgroundResource(R.drawable.unhappy);
+            face.setBackgroundResource(R.drawable.close);
 
 
             //將firebase取到的資料印在上面
@@ -175,7 +175,7 @@ public class SearchActivity extends AppCompatActivity {
 
                             tx1.setText("此區域有愛心攤販喔～");
                             tx1.setVisibility(View.VISIBLE);
-                           face.setBackgroundResource(R.drawable.happy);
+                           face.setBackgroundResource(R.drawable.checked);
 
 
 

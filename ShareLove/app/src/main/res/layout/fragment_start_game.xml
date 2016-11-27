@@ -3,7 +3,8 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context="com.example.jiarou.sharelove.Start_GameFragment"
-             android:id="@+id/f2">
+             android:id="@+id/f2"
+             android:background="#f9f5da">
 
 
     <LinearLayout
@@ -65,7 +66,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Medium Text"
             android:id="@+id/txv"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
 
         <Button
             android:layout_width="wrap_content"
