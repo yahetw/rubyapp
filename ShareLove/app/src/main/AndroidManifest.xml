@@ -122,6 +122,7 @@
         </service>
     </application>
 
+    <!--FaceBook部分有問題-->
     <provider
         android:name="com.facebook.FacebookContentProvider"
         android:authorities="com.facebook.app.FacebookContentProvider1266123886739578"
