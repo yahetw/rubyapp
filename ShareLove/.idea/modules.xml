@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ShareLove.iml" filepath="$PROJECT_DIR$/ShareLove.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/ShareLove-app.iml" filepath="$PROJECT_DIR$/app/ShareLove-app.iml" group="ShareLove/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rubyapp-ShareLove.iml" filepath="$PROJECT_DIR$/rubyapp-ShareLove.iml" group="ShareLove" />
     </modules>
   </component>
 </project>
